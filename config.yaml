@@ -1,0 +1,28 @@
+# **************************************
+# * Parameters for metprofile pipeline *
+# **************************************
+
+list_files: "/bulk/IMCbinf_bulk/hramay/projects/pipelines/metaphlan3.1/list_files.txt"
+
+
+# Path to sequences
+path: "/bulk/IMCbinf_bulk/hramay/projects/Maitreyi/UCdiet/metqc/output/bmtagger/"
+
+output_dir: "output"
+
+# Metaphlan bowtie2 database.
+metaphlan_database: "/bulk/IMCshared_bulk/shared/dbs/metaphlan3.1"
+
+# Nthreads metaphlan can use
+threads: 8
+
+# Are reads paired?
+paired: TRUE
+
+# If paired-end reads, suffix for forward reads
+for: "_bmtagged_1.fastq"
+# If paired-end reads, suffix for reverse reads
+rev: "_bmtagged_2.fastq"
+
+# If unpaired reads, suffix for reads
+suff: "_bmt_merged_ELC_trimmed_filtered.fastq"
